@@ -77,8 +77,8 @@ public class ConfirmChangeModel(
                 id,
                 SupportProjectStatus,
                 EligibilityStatus,
-                DateSupportIsDueToEnd,
-                StatusOrEligiblityChangeDate
+                DateSupportIsDueToEnd = DateSupportIsDueToEnd?.ToString("yyyy-MM-dd"),
+                StatusOrEligiblityChangeDate = StatusOrEligiblityChangeDate?.ToString("yyyy-MM-dd")
             });
     }
 }

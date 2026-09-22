@@ -76,7 +76,7 @@ public class IsThisSchoolEligibleForInterventionModel(
                 id,
                 SupportProjectStatus,
                 EligibilityStatus,
-                DateSupportIsDueToEnd
+                DateSupportIsDueToEnd = DateSupportIsDueToEnd?.ToString("yyyy-MM-dd")
             });
     }
 

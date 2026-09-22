@@ -63,8 +63,8 @@ public class EnterDetailsAboutTheChangeModel(
             id,
             SupportProjectStatus,
             EligibilityStatus,
-            DateSupportIsDueToEnd,
-            StatusOrEligiblityChangeDate,
+            DateSupportIsDueToEnd = DateSupportIsDueToEnd?.ToString("yyyy-MM-dd"),
+            StatusOrEligiblityChangeDate = StatusOrEligiblityChangeDate?.ToString("yyyy-MM-dd"),
             ChangeDetails
         });
     }
